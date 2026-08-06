@@ -39,15 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
       Enviando...
     `;
 
-    // Simulate form submission (replace with actual endpoint)
-    // TODO: Integrar com Formspree, API, ou WhatsApp
+    // Formatar mensagem para o WhatsApp
+    const whatsappNumber = '5513992007912';
+    // Codificar a mensagem para URL usando encodeURIComponent
+    const rawText = `*Novo Lead do Site!*\n\n*Nome:* ${data.nome}\n*E-mail:* ${data.email}\n*WhatsApp:* ${data.whatsapp || 'Não informado'}\n*Serviço:* ${data.servico}\n*Mensagem:* ${data.mensagem || 'Sem mensagem'}`;
+    const text = encodeURIComponent(rawText);
+    
     setTimeout(() => {
-      // Log form data (for debugging)
-      console.log('📋 Dados do formulário:', data);
+      // Abrir o WhatsApp em uma nova aba
+      window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
 
-      // Redirect to thank you page
+      // Redirecionar a aba atual para a página de obrigado
       window.location.href = '/obrigado.html';
-    }, 1500);
+    }, 800);
   });
 });
 
