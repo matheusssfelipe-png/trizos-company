@@ -1,0 +1,161 @@
+/* ========================================
+   LINKEDIN PORTFOLIO PAGE STYLES
+======================================== */
+
+.portfolio-hero {
+  padding: 140px 24px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 24px;
+  border: 4px solid var(--bc);
+  box-shadow: var(--glow);
+}
+
+.portfolio-bio {
+  max-width: 600px;
+  margin: 16px auto 32px;
+  color: var(--t2);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Countries Section */
+.countries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.country-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: var(--bg2);
+  border: 1px solid var(--bc);
+  border-radius: 100px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.country-tag:hover {
+  border-color: var(--p);
+  transform: translateY(-2px);
+}
+
+/* Timeline (Experience) */
+.timeline {
+  max-width: 800px;
+  margin: 0 auto 80px;
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid var(--bc);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -41px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--bg1);
+  border: 4px solid var(--p);
+  border-radius: 50%;
+}
+
+.timeline-date {
+  color: var(--p);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.timeline-title {
+  font-family: var(--fh);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.timeline-company {
+  color: var(--t2);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.timeline-desc {
+  color: var(--t3);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.project-card {
+  background: var(--bg2);
+  border: 1px solid var(--bc);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  border-color: var(--p);
+  transform: translateY(-5px);
+}
+
+.project-title {
+  font-family: var(--fh);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.project-desc {
+  color: var(--t2);
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.project-results {
+  background: rgba(124, 58, 237, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  color: var(--pl);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* CTA Section */
+.linkedin-cta {
+  text-align: center;
+  padding: 80px 24px;
+  background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 100%);
+  border-top: 1px solid var(--bc);
+  margin-bottom: 40px;
+}
