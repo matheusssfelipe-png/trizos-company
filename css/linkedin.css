@@ -159,3 +159,39 @@
   border-top: 1px solid var(--bc);
   margin-bottom: 40px;
 }
+
+/* Certifications Grid */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg2);
+  border: 1px solid var(--bc);
+  border-radius: 8px;
+}
+
+.cert-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--bg1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--p);
+  flex-shrink: 0;
+  border: 1px solid var(--bc);
+}
+
+.cert-card h4 {
+  font-size: 14px;
+  color: var(--t1);
+  line-height: 1.4;
+}

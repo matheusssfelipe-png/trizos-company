@@ -13,20 +13,25 @@
     import '../css/variables.css';
     import '../css/base.css';
     import '../css/components.css';
-    import '../css/portfolio-light.css';
+    import '../css/linkedin.css';
   </script>
 </head>
 <body>
 
   <!-- ==================== 1. HERO ==================== -->
-  <section class="ptf-hero">
+  <section class="portfolio-hero">
     <div class="container">
       <img src="https://via.placeholder.com/150" alt="Matheus Felipy" class="profile-img">
-      <h1>Escalo campanhas de mídia paga que viram receita, não só cliques.</h1>
-      <p class="ptf-hero-sub">
+      <div class="sh" style="margin-bottom: 24px;">
+        <div class="tag"><span class="tag-dot"></span>Disponível para novos projetos</div>
+        <h1 style="font-family: var(--fh); font-size: clamp(32px, 5vw, 48px); font-weight: 700; margin-top: 16px;">
+          Escalo campanhas de mídia paga que viram <span class="gt">receita</span>, não só cliques.
+        </h1>
+      </div>
+      <p class="portfolio-bio">
         Performance marketer especializado em Google Ads e Meta Ads. Atendimento bilíngue (português/inglês) para negócios no Brasil e no exterior — já ajudei clientes a multiplicar faturamento, agendamentos e vendas com estratégia orientada a dados.
       </p>
-      <div class="ptf-hero-btns">
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
         <a href="#cases" class="btn btn-p">Ver resultados</a>
         <a href="#contato" class="btn btn-s">Falar comigo</a>
       </div>
@@ -34,213 +39,176 @@
   </section>
 
   <!-- ==================== 2. PROVA RÁPIDA ==================== -->
-  <section class="proof-strip">
+  <section style="background: var(--bg2); padding: 40px 24px; border-top: 1px solid var(--bc); border-bottom: 1px solid var(--bc);">
     <div class="container">
-      <div class="proof-grid">
-        <div class="proof-item">
-          <h3>R$115k/mês</h3>
-          <p>faturamento gerado para clínica veterinária (de R$35k)</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; text-align: center;">
+        <div>
+          <h3 style="font-family: var(--fh); font-size: 32px; font-weight: 700; color: var(--pl); margin-bottom: 8px;">R$115k/mês</h3>
+          <p style="color: var(--t2); font-size: 14px;">faturamento gerado para clínica veterinária (de R$35k)</p>
         </div>
-        <div class="proof-item">
-          <h3>6.450</h3>
-          <p>installs a $1,49 de CPI (app de mobilidade)</p>
+        <div>
+          <h3 style="font-family: var(--fh); font-size: 32px; font-weight: 700; color: var(--pl); margin-bottom: 8px;">6.450</h3>
+          <p style="color: var(--t2); font-size: 14px;">installs a $1,49 de CPI (app de mobilidade)</p>
         </div>
-        <div class="proof-item">
-          <h3>223%</h3>
-          <p>aumento em agendamentos de spa em 3 meses</p>
+        <div>
+          <h3 style="font-family: var(--fh); font-size: 32px; font-weight: 700; color: var(--pl); margin-bottom: 8px;">223%</h3>
+          <p style="color: var(--t2); font-size: 14px;">aumento em agendamentos de spa em 3 meses</p>
         </div>
-        <div class="proof-item">
-          <h3>6</h3>
-          <p>países atendidos (BR, US, PT, IE, UK, AU)</p>
+        <div>
+          <h3 style="font-family: var(--fh); font-size: 32px; font-weight: 700; color: var(--pl); margin-bottom: 8px;">6</h3>
+          <p style="color: var(--t2); font-size: 14px;">países atendidos (BR, US, PT, IE, UK, AU)</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== 3. ATUAÇÃO GLOBAL ==================== -->
-  <section class="ptf-section">
+  <section style="padding: 100px 24px;">
     <div class="container">
       <div class="sh" style="text-align: left; margin-bottom: 48px;">
-        <h2>Atuação Global</h2>
+        <h2>Atuação <span class="gt">Global</span></h2>
         <p>Experiência internacional conectando negócios aos seus clientes ideais.</p>
       </div>
       
-      <div class="global-grid">
-        <div class="global-col">
-          <h3>Países Atendidos</h3>
-          <ul class="global-list">
-            <li>🇧🇷 Brasil</li>
-            <li>🇺🇸 Estados Unidos</li>
-            <li>🇵🇹 Portugal</li>
-            <li>🇮🇪 Irlanda</li>
-            <li>🇬🇧 Reino Unido</li>
-            <li>🇦🇺 Austrália</li>
-            <li>🇸🇪 Suécia (Leadflix)</li>
-          </ul>
-        </div>
-        <div class="global-col">
-          <h3>Nichos de Experiência</h3>
-          <ul class="global-list">
-            <li>Mobilidade e apps (ride-hailing)</li>
-            <li>Saúde e pet (clínica veterinária)</li>
-            <li>Imobiliário</li>
-            <li>Automotivo (concessionárias)</li>
-            <li>Wellness / spa e beleza</li>
-            <li>E-commerce & SaaS</li>
-          </ul>
-        </div>
+      <div class="countries-grid" style="justify-content: flex-start; margin-bottom: 48px;">
+        <div class="country-tag">🇧🇷 Brasil</div>
+        <div class="country-tag">🇺🇸 Estados Unidos</div>
+        <div class="country-tag">🇵🇹 Portugal</div>
+        <div class="country-tag">🇮🇪 Irlanda</div>
+        <div class="country-tag">🇬🇧 Reino Unido</div>
+        <div class="country-tag">🇦🇺 Austrália</div>
+        <div class="country-tag">🇸🇪 Suécia (Leadflix)</div>
       </div>
 
-      <div class="callout">
-        <h4>Atendimento bilíngue — português e inglês.</h4>
-        <p>Trabalho direto com clientes brasileiros e internacionais, adaptando comunicação, relatórios e estratégia ao idioma e ao contexto de cada mercado.</p>
+      <div style="background: var(--bg2); border-left: 4px solid var(--p); padding: 32px; border-radius: 8px; max-width: 800px;">
+        <h4 style="font-family: var(--fh); font-size: 18px; margin-bottom: 8px; color: var(--t1);">Atendimento bilíngue — português e inglês.</h4>
+        <p style="color: var(--t2); margin: 0;">Trabalho direto com clientes brasileiros e internacionais, adaptando comunicação, relatórios e estratégia ao idioma e ao contexto de cada mercado.</p>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 4. SERVIÇOS ==================== -->
-  <section class="ptf-section" style="background: var(--bg2);">
+  <!-- ==================== 4. SERVIÇOS / COMPETÊNCIAS ==================== -->
+  <section style="padding: 100px 24px; background: var(--bg2);">
     <div class="container">
       <div class="sh" style="text-align: left; margin-bottom: 48px;">
         <h2>Minhas Competências</h2>
       </div>
-      
-      <div class="svc-list">
-        <div class="svc-item">
-          <h3>Gestão de Google Ads</h3>
-          <p>Campanhas de Search, Performance Max (PMax) e Video focadas na captação de demanda ativa.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">Gestão de Google Ads</h3>
+          <p class="project-desc">Campanhas de Search, Performance Max (PMax) e Video focadas na captação de demanda ativa.</p>
         </div>
-        <div class="svc-item">
-          <h3>Gestão de Meta Ads</h3>
-          <p>Estratégias em Facebook e Instagram, com foco intenso em testes de criativos (A/B) e geração de demanda.</p>
+        <div class="project-card">
+          <h3 class="project-title">Gestão de Meta Ads</h3>
+          <p class="project-desc">Estratégias em Facebook e Instagram, com foco intenso em testes de criativos (A/B) e geração de demanda.</p>
         </div>
-        <div class="svc-item">
-          <h3>Estratégia Full-Funnel</h3>
-          <p>Da aquisição à retenção. Configuração avançada de tracking (Pixel, API de Conversões) para dados precisos.</p>
+        <div class="project-card">
+          <h3 class="project-title">Estratégia Full-Funnel</h3>
+          <p class="project-desc">Da aquisição à retenção. Configuração avançada de tracking (Pixel, API de Conversões) para dados precisos.</p>
         </div>
-        <div class="svc-item">
-          <h3>Copywriting para Conversão</h3>
-          <p>Criação de textos persuasivos (copy) para anúncios e landing pages, alinhados com o nível de consciência do lead.</p>
+        <div class="project-card">
+          <h3 class="project-title">Copywriting para Conversão</h3>
+          <p class="project-desc">Criação de textos persuasivos (copy) para anúncios e landing pages, alinhados com o nível de consciência do lead.</p>
         </div>
-        <div class="svc-item">
-          <h3>Consultoria de CRO</h3>
-          <p>Análise e otimização de páginas de produto e processos de checkout para aumentar a taxa de conversão (CRO).</p>
+        <div class="project-card">
+          <h3 class="project-title">Consultoria de CRO</h3>
+          <p class="project-desc">Análise e otimização de páginas de produto e processos de checkout para aumentar a taxa de conversão (CRO).</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 5. CASES / RESULTADOS ==================== -->
-  <section class="ptf-section" id="cases">
+  <!-- ==================== 5. CASES (TIMELINE) ==================== -->
+  <section id="cases" style="padding: 100px 24px;">
     <div class="container">
       <div class="sh" style="text-align: left; margin-bottom: 48px;">
         <h2>Resultados Comprovados</h2>
         <p>Cases reais de como transformo investimento em mídia paga em receita e escala.</p>
       </div>
-
-      <div class="cases-grid">
+      
+      <div class="timeline">
         <!-- Case 1 -->
-        <div class="case-card">
-          <span class="case-tag">App de Mobilidade</span>
-          <h3>Aquisição e Ativação de Usuários</h3>
-          <div class="case-meta">
-            <p><strong>Desafio:</strong> Concorrente da Uber/99 buscando escala de usuários ativos.</p>
-            <p><strong>Ação:</strong> Gestão intensiva de Google Ads focada em custo de aquisição.</p>
-          </div>
-          <div class="case-result">
-            <span class="case-result-num">6.450</span>
-            <span class="case-result-text">instalações geradas a apenas $1,49 de CPI médio.</span>
-          </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Mobilidade</span>
+          <h3 class="timeline-title">Concorrente da Uber/99</h3>
+          <p class="timeline-company">Aquisição e Ativação de Usuários</p>
+          <p class="timeline-desc" style="margin-bottom: 16px;"><strong>Desafio:</strong> Escala de usuários ativos. <strong>Ação:</strong> Gestão intensiva de Google Ads focada em custo de aquisição.</p>
+          <div class="project-results">🎯 6.450 instalações a apenas $1,49 de CPI médio.</div>
         </div>
 
         <!-- Case 2 -->
-        <div class="case-card">
-          <span class="case-tag">Saúde e Pet</span>
-          <h3>Clínica Veterinária</h3>
-          <div class="case-meta">
-            <p><strong>Desafio:</strong> Baixo volume de clientes recorrentes e agendamentos diretos.</p>
-            <p><strong>Ação:</strong> Estratégia digital 360º unindo novo site, produção de vídeo e Meta + Google Ads.</p>
-          </div>
-          <div class="case-result">
-            <span class="case-result-num">R$115k</span>
-            <span class="case-result-text">de faturamento mensal (crescimento saindo de R$35k).</span>
-          </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Saúde e Pet</span>
+          <h3 class="timeline-title">Clínica Veterinária</h3>
+          <p class="timeline-company">Estratégia Full-Funnel</p>
+          <p class="timeline-desc" style="margin-bottom: 16px;"><strong>Desafio:</strong> Baixo volume de clientes recorrentes. <strong>Ação:</strong> Estratégia digital 360º unindo novo site, produção de vídeo e Meta + Google Ads.</p>
+          <div class="project-results">📈 Faturamento mensal saltou de R$35k para R$115k.</div>
         </div>
 
         <!-- Case 3 -->
-        <div class="case-card">
-          <span class="case-tag">Wellness (Irlanda)</span>
-          <h3>Spa em Dublin</h3>
-          <div class="case-meta">
-            <p><strong>Desafio:</strong> Aumentar a previsibilidade de agenda de clientes locais.</p>
-            <p><strong>Ação:</strong> Aquisição paga full-funnel com PMax, Search e testes contínuos de criativo.</p>
-          </div>
-          <div class="case-result">
-            <span class="case-result-num">223%</span>
-            <span class="case-result-text">aumento em agendamentos (de 137 para 360) em 3 meses.</span>
-          </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Wellness (Irlanda)</span>
+          <h3 class="timeline-title">Spa em Dublin</h3>
+          <p class="timeline-company">Geração de Demanda Local</p>
+          <p class="timeline-desc" style="margin-bottom: 16px;"><strong>Desafio:</strong> Aumentar a previsibilidade de agenda. <strong>Ação:</strong> Aquisição paga com PMax, Search e testes contínuos de criativo.</p>
+          <div class="project-results">🚀 223% de aumento em agendamentos (de 137 para 360) em 3 meses.</div>
         </div>
 
         <!-- Case 4 -->
-        <div class="case-card">
-          <span class="case-tag">Imobiliário</span>
-          <h3>Lançamentos Imobiliários</h3>
-          <div class="case-meta">
-            <p><strong>Desafio:</strong> Geração de leads desqualificados encarecendo o custo de venda.</p>
-            <p><strong>Ação:</strong> Refinamento agressivo em campanhas de Meta Ads com segmentação avançada.</p>
-          </div>
-          <div class="case-result">
-            <span class="case-result-num">14</span>
-            <span class="case-result-text">apartamentos de alto padrão vendidos em 8 meses.</span>
-          </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Imobiliário</span>
+          <h3 class="timeline-title">Lançamentos de Alto Padrão</h3>
+          <p class="timeline-company">Geração de Leads Qualificados</p>
+          <p class="timeline-desc" style="margin-bottom: 16px;"><strong>Desafio:</strong> Leads desqualificados encarecendo a venda. <strong>Ação:</strong> Refinamento agressivo no Meta Ads com segmentação avançada.</p>
+          <div class="project-results">🏢 14 apartamentos vendidos em 8 meses diretamente pela mídia paga.</div>
         </div>
 
         <!-- Case 5 -->
-        <div class="case-card">
-          <span class="case-tag">Automotivo</span>
-          <h3>Concessionária</h3>
-          <div class="case-meta">
-            <p><strong>Desafio:</strong> Atrair compradores com real intenção de compra na região.</p>
-            <p><strong>Ação:</strong> Cruzamento de Google Ads (intenção) + Meta Ads (desejo/estoque).</p>
-          </div>
-          <div class="case-result">
-            <span class="case-result-num">25</span>
-            <span class="case-result-text">carros vendidos diretamente atribuídos aos leads em 1 mês.</span>
-          </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Automotivo</span>
+          <h3 class="timeline-title">Concessionária</h3>
+          <p class="timeline-company">Captação de Alta Intenção</p>
+          <p class="timeline-desc" style="margin-bottom: 16px;"><strong>Desafio:</strong> Atrair compradores com real intenção de compra na região. <strong>Ação:</strong> Cruzamento de Google Ads (intenção) + Meta Ads (desejo/estoque).</p>
+          <div class="project-results">🚗 25 carros vendidos atribuídos aos leads em 1 mês.</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== 6. METODOLOGIA ==================== -->
-  <section class="ptf-section">
+  <section style="padding: 100px 24px; background: var(--bg2);">
     <div class="container">
       <div class="sh" style="text-align: left; margin-bottom: 48px;">
         <h2>Como eu trabalho</h2>
       </div>
       
-      <div class="svc-list">
-        <div class="svc-item">
-          <h3>Crescimento orientado a dados</h3>
-          <p>Toda campanha parte de hipótese, teste e iteração. Não otimizo para "cliques baratos", mas conecto os dados à receita, ROAS e LTV do negócio.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">Crescimento orientado a dados</h3>
+          <p class="project-desc">Toda campanha parte de hipótese, teste e iteração. Não otimizo para "cliques baratos", mas conecto os dados à receita, ROAS e LTV do negócio.</p>
         </div>
-        <div class="svc-item">
-          <h3>Estratégia centrada no cliente</h3>
-          <p>Mapeio a jornada completa do seu consumidor e priorizo o que resolve o gargalo real do seu funil de vendas, seja na captação ou na conversão.</p>
+        <div class="project-card">
+          <h3 class="project-title">Estratégia centrada no cliente</h3>
+          <p class="project-desc">Mapeio a jornada completa do seu consumidor e priorizo o que resolve o gargalo real do seu funil de vendas, seja na captação ou na conversão.</p>
         </div>
-        <div class="svc-item">
-          <h3>Mentalidade de dono</h3>
-          <p>Não olho só para o painel de anúncios. Penso em fluxo de caixa, margem de lucro e capacidade de escala, tratando o seu orçamento como se fosse meu.</p>
+        <div class="project-card">
+          <h3 class="project-title">Mentalidade de dono</h3>
+          <p class="project-desc">Não olho só para o painel de anúncios. Penso em fluxo de caixa, margem de lucro e capacidade de escala, tratando o seu orçamento como se fosse meu.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== 7. CERTIFICAÇÕES ==================== -->
-  <section class="ptf-section" style="background: var(--bg2);">
+  <section style="padding: 100px 24px;">
     <div class="container">
       <div class="sh" style="text-align: left; margin-bottom: 48px;">
-        <h2>Certificações & Validações</h2>
+        <h2>Certificações</h2>
       </div>
       
       <div class="certs-grid">
@@ -248,7 +216,7 @@
           <div class="cert-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l9-9l-9-9l2 5l-10 4z"/></svg>
           </div>
-          <h4>AI-Powered Performance Ads Certification<br><span style="color:var(--t3); font-weight:normal;">Skillshop, 2026</span></h4>
+          <h4>AI-Powered Performance Ads<br><span style="color:var(--t3); font-weight:normal;">Skillshop, 2026</span></h4>
         </div>
         <div class="cert-card">
           <div class="cert-icon">
@@ -264,12 +232,6 @@
         </div>
         <div class="cert-card">
           <div class="cert-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          </div>
-          <h4>Campanhas Pagas de Pesquisa<br><span style="color:var(--t3); font-weight:normal;">Skillshop</span></h4>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
           </div>
           <h4>EF SET English Certificate<br><span style="color:var(--t3); font-weight:normal;">B2 Independente (52/100)</span></h4>
@@ -279,45 +241,45 @@
   </section>
 
   <!-- ==================== 8. BLOG ==================== -->
-  <section class="ptf-section">
+  <section style="padding: 100px 24px; background: var(--bg2);">
     <div class="container">
       <div class="sh" style="text-align: left; margin-bottom: 48px;">
         <h2>Insights & Artigos</h2>
         <p>Opiniões, frameworks e estratégias sobre performance marketing.</p>
       </div>
 
-      <div class="blog-grid">
-        <div class="blog-card">
-          <h3>Targeting não salva criativo ruim</h3>
-          <p>Por que você deveria focar em testar novos ângulos e criativos antes de se preocupar em mexer infinitamente na audiência.</p>
-          <span class="blog-read">Ler artigo &rarr;</span>
+      <div class="projects-grid">
+        <div class="project-card" style="cursor: pointer;">
+          <h3 class="project-title">Targeting não salva criativo ruim</h3>
+          <p class="project-desc">Por que focar em testar novos ângulos antes de mexer na audiência.</p>
+          <span style="color: var(--pl); font-size: 14px; font-weight: 600;">Ler artigo &rarr;</span>
         </div>
-        <div class="blog-card">
-          <h3>Por que CPA baixo não é a métrica certa</h3>
-          <p>O meu framework de 4 sinais (spend, frequência, CPM, custo por resultado) para avaliar a saúde real de uma campanha de conversão.</p>
-          <span class="blog-read">Ler artigo &rarr;</span>
+        <div class="project-card" style="cursor: pointer;">
+          <h3 class="project-title">Por que CPA baixo não é a métrica certa</h3>
+          <p class="project-desc">O framework de 4 sinais para avaliar a saúde de uma campanha de conversão.</p>
+          <span style="color: var(--pl); font-size: 14px; font-weight: 600;">Ler artigo &rarr;</span>
         </div>
-        <div class="blog-card">
-          <h3>O media buyer da era da IA</h3>
-          <p>Como a Inteligência Artificial mudou o papel do gestor de tráfego de um 'apertador de botões' para um estrategista de negócios.</p>
-          <span class="blog-read">Ler artigo &rarr;</span>
+        <div class="project-card" style="cursor: pointer;">
+          <h3 class="project-title">O media buyer da era da IA</h3>
+          <p class="project-desc">Como a IA mudou o papel do gestor de 'apertador de botões' para estrategista.</p>
+          <span style="color: var(--pl); font-size: 14px; font-weight: 600;">Ler artigo &rarr;</span>
         </div>
-        <div class="blog-card">
-          <h3>Checklist de Above the Fold para produtos</h3>
-          <p>Otimização de Conversão (CRO) básica que a maioria dos e-commerces ignora na primeira dobra da página do produto.</p>
-          <span class="blog-read">Ler artigo &rarr;</span>
+        <div class="project-card" style="cursor: pointer;">
+          <h3 class="project-title">Checklist de Above the Fold (CRO)</h3>
+          <p class="project-desc">Otimização de Conversão básica que a maioria dos e-commerces ignora.</p>
+          <span style="color: var(--pl); font-size: 14px; font-weight: 600;">Ler artigo &rarr;</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== 9. CTA FINAL ==================== -->
-  <section class="ptf-hero" id="contato" style="padding-top: 80px; padding-bottom: 120px;">
+  <section class="linkedin-cta" id="contato">
     <div class="container">
-      <h2 style="font-family: var(--fh); font-size: 32px; font-weight: 700; margin-bottom: 16px;">Pronto para escalar seu negócio com tráfego pago que converte?</h2>
-      <p style="color: var(--t2); margin-bottom: 40px; font-size: 18px;">Vamos conversar sobre seus objetivos e como posso ajudar sua empresa.</p>
+      <h2 style="font-family: var(--fh); font-size: 32px; font-weight: 700; margin-bottom: 16px; color: var(--t1);">Pronto para escalar com tráfego que converte?</h2>
+      <p style="color: var(--t2); margin-bottom: 32px; font-size: 18px;">Vamos conversar sobre seus objetivos e como posso ajudar sua empresa.</p>
       
-      <div class="ptf-hero-btns">
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
         <a href="https://wa.me/5513992007912?text=Olá%20Matheus,%20gostaria%20de%20conversar%20sobre%20gestão%20de%20tráfego." target="_blank" class="btn btn-p">
           Falar no WhatsApp
         </a>
