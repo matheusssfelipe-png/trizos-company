@@ -7,7 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         obrigado: resolve(__dirname, 'obrigado/index.html'),
-        linkedin: resolve(__dirname, 'linkedin/index.html'),
+        portfolio: resolve(__dirname, 'portfolio/index.html'),
       },
     },
   },
