@@ -1,0 +1,14 @@
+{
+  "name": "trizos-company",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Trizos Company — Agência Digital para Brasileiros no Exterior",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

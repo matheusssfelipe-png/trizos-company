@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Obrigado pelo seu contato! A equipe Trizos Company entrará em contato em breve.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Obrigado! — Trizos Company</title>
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <script type="module">
+    import '../css/variables.css';
+    import '../css/base.css';
+    import '../css/components.css';
+    import '../css/header.css';
+    import '../css/footer.css';
+    import '../css/responsive.css';
+  </script>
+  <style>
+    .thankyou {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 140px 24px 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thankyou::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+      background: var(--p);
+      filter: blur(180px);
+      opacity: .08;
+      border-radius: 50%;
+    }
+
+    .thankyou-content {
+      position: relative;
+      z-index: 1;
+      max-width: 560px;
+    }
+
+    .thankyou-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, .12);
+      border: 2px solid rgba(16, 185, 129, .3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      animation: scaleIn .5s ease forwards;
+    }
+
+    .thankyou-icon svg {
+      width: 36px;
+      height: 36px;
+      stroke: #10B981;
+    }
+
+    .thankyou-content h1 {
+      font-family: var(--fh);
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      animation: fadeUp .6s ease .2s forwards;
+      opacity: 0;
+    }
+
+    .thankyou-content > p {
+      font-size: 17px;
+      color: var(--t2);
+      line-height: 1.65;
+      margin-bottom: 12px;
+      animation: fadeUp .6s ease .35s forwards;
+      opacity: 0;
+    }
+
+    .thankyou-steps {
+      text-align: left;
+      background: var(--bg3);
+      border: 1px solid var(--bc);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 32px 0;
+      animation: fadeUp .6s ease .5s forwards;
+      opacity: 0;
+    }
+
+    .thankyou-steps h3 {
+      font-family: var(--fh);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--ta);
+    }
+
+    .thankyou-steps li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 8px 0;
+      font-size: 14px;
+      color: var(--t2);
+      line-height: 1.5;
+    }
+
+    .thankyou-steps li svg {
+      width: 18px;
+      height: 18px;
+      stroke: #10B981;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .thankyou-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp .6s ease .65s forwards;
+      opacity: 0;
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="/" class="logo" style="display: flex; align-items: center; gap: 8px;">
+        <img src="/logo.png" alt="Trizos Company" style="height: 38px; width: auto; display: block;">
+        <span>Trizos Company</span>
+      </a>
+      <nav class="nav">
+        <a href="/">Voltar ao site</a>
+      </nav>
+      <div class="nav-cta"><a href="/" class="btn btn-p">Voltar ao site</a></div>
+    </div>
+  </header>
+
+  <!-- THANK YOU CONTENT -->
+  <section class="thankyou">
+    <div class="thankyou-content">
+      <div class="thankyou-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+          <path d="m9 11 3 3L22 4" />
+        </svg>
+      </div>
+      <h1>Mensagem enviada com <span class="gt">sucesso!</span></h1>
+      <p>Obrigado pelo seu interesse na Trizos Company. Nossa equipe está analisando sua solicitação e entrará em
+        contato em breve.</p>
+
+      <div class="thankyou-steps">
+        <h3>📋 Próximos passos:</h3>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+            Nossa equipe vai analisar seu projeto em até <strong style="color: var(--t1);">24 horas</strong>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+            Você receberá um e-mail ou WhatsApp com uma <strong style="color: var(--t1);">proposta
+              personalizada</strong>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+            Agendamos uma <strong style="color: var(--t1);">reunião gratuita</strong> para alinhar os detalhes
+          </li>
+        </ul>
+      </div>
+
+      <div class="thankyou-btns">
+        <a href="/" class="btn btn-p">Voltar ao site
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5" />
+            <path d="m12 19-7-7 7-7" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/trizoscompany/" target="_blank" class="btn btn-s">Siga no Instagram
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (simplified) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 Trizos Company. Todos os direitos reservados.</p>
+        <a href="/">trizoscompany.com</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

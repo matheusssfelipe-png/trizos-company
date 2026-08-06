@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Trizos Company — Agência digital para brasileiros no exterior. Sites, landing pages e tráfego pago que geram resultados reais.">
+  <meta name="keywords"
+    content="agência digital, brasileiros no exterior, criação de sites, tráfego pago, marketing digital, irlanda, estados unidos">
+  <meta property="og:title" content="Trizos Company — Resultados Reais para seu Negócio">
+  <meta property="og:description" content="Somos parceiros de crescimento de brasileiros que empreendem no exterior.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trizoscompany.com">
+  <title>Trizos Company — Agência Digital para Brasileiros no Exterior</title>
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <script type="module" src="/js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#hero" class="logo" style="display: flex; align-items: center; gap: 8px;">
+        <img src="/logo.png" alt="Trizos Company" style="height: 38px; width: auto; display: block;"
+          class="logo-desktop">
+        <span>Trizos Company</span>
+      </a>
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#internacional">Internacional</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="nav-cta"><a href="#contato" class="btn btn-p">Fale Conosco</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE MENU ==================== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" onclick="closeMenu()">Home</a>
+    <a href="#servicos" onclick="closeMenu()">Serviços</a>
+    <a href="#sobre" onclick="closeMenu()">Sobre</a>
+    <a href="#internacional" onclick="closeMenu()">Internacional</a>
+    <a href="#contato" onclick="closeMenu()">Contato</a>
+    <a href="#contato" class="btn btn-p" onclick="closeMenu()">Fale Conosco</a>
+    <div class="mm-social">
+      <a href="https://www.instagram.com/trizoscompany/" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/matheusfelipy/" target="_blank">LinkedIn</a>
+      <a href="https://www.youtube.com/@umfuturoinevitavel" target="_blank">YouTube</a>
+    </div>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-blob hero-b1"></div>
+    <div class="hero-blob hero-b2"></div>
+    <div class="hero-blob hero-b3"></div>
+    <div class="hero-content">
+      <div class="tag"><span class="tag-dot"></span> Agência digital para brasileiros no exterior</div>
+      <h1>Seu negócio merece <span class="gt">resultados reais</span>, não métricas de vaidade</h1>
+      <p>Somos parceiros de crescimento de brasileiros que empreendem no exterior. Sites, landing pages e tráfego pago
+        que geram clientes de verdade.</p>
+      <div class="hero-btns">
+        <a href="#contato" class="btn btn-p">Fale Conosco
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#servicos" class="btn btn-s">Nossos Serviços
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </a>
+      </div>
+      <div class="hero-proof">
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <path d="m9 11 3 3L22 4" />
+          </svg>
+          <span><strong>+45</strong> clientes</span>
+        </div>
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <path d="m9 11 3 3L22 4" />
+          </svg>
+          <span><strong>4+</strong> anos</span>
+        </div>
+        <div class="proof-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <path d="m9 11 3 3L22 4" />
+          </svg>
+          <span><strong>Multi</strong>-plataformas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LOGOS / FLAGS MARQUEE ==================== -->
+  <section class="logos-section">
+    <p>Atendemos empresas em diversos países</p>
+    <div class="marquee-wrap">
+      <div class="marquee">
+        <img src="https://flagcdn.com/w160/br.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Brasil">
+        <img src="https://flagcdn.com/w160/us.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Estados Unidos">
+        <img src="https://flagcdn.com/w160/au.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Austrália">
+        <img src="https://flagcdn.com/w160/pt.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Portugal">
+        <img src="https://flagcdn.com/w160/gb.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Reino Unido">
+        <img src="https://flagcdn.com/w160/se.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Suécia">
+        <!-- Duplicate for infinite scroll loop -->
+        <img src="https://flagcdn.com/w160/br.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Brasil">
+        <img src="https://flagcdn.com/w160/us.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Estados Unidos">
+        <img src="https://flagcdn.com/w160/au.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Austrália">
+        <img src="https://flagcdn.com/w160/pt.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Portugal">
+        <img src="https://flagcdn.com/w160/gb.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Reino Unido">
+        <img src="https://flagcdn.com/w160/se.png" style="height:40px; opacity: 0.9; filter: brightness(1.1);"
+          class="marquee-item" alt="Suécia">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERNATIONAL ==================== -->
+  <section class="intl" id="internacional">
+    <div class="container">
+      <div class="sh rv">
+        <div class="tag"><span class="tag-dot"></span> Atendimento Internacional</div>
+        <h2>Escale seu negócio <span class="gt">fora do Brasil</span></h2>
+        <p>Para brasileiros empreendendo no exterior ou empresas internacionais que buscam resultados, a Trizos entrega
+          soluções de marketing e tecnologia sob medida para conquistar mercados globais.</p>
+      </div>
+
+      <div class="intl-features rv">
+        <div class="intl-feat-card">
+          <div class="intl-feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20" />
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Estratégias Bilíngues</h3>
+            <p>Campanhas em português e inglês, otimizadas para mercados como EUA, Europa e Austrália, com SEO local e
+              anúncios segmentados.</p>
+          </div>
+        </div>
+        <div class="intl-feat-card">
+          <div class="intl-feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div>
+            <h3>Adaptação Cultural</h3>
+            <p>Funis de vendas e comunicação alinhados com as expectativas do seu público internacional, aumentando
+              conversões em até 40%.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="intl-countries-label rv">
+        <span>Alguns dos países onde já atuamos</span>
+        <div class="intl-divider"></div>
+      </div>
+
+      <div class="intl-grid rv">
+        <div class="intl-card rd1">
+          <div class="intl-flag-img"><img src="https://flagcdn.com/w160/ie.png" alt="Irlanda" loading="lazy"></div>
+          <h3>Irlanda</h3>
+          <span class="intl-lang">English & Português</span>
+          <p>Sites, Google Ads e Meta Ads para negócios brasileiros na Irlanda.</p>
+        </div>
+        <div class="intl-card rd2">
+          <div class="intl-flag-img"><img src="https://flagcdn.com/w160/us.png" alt="Estados Unidos" loading="lazy">
+          </div>
+          <h3>Estados Unidos</h3>
+          <span class="intl-lang">English & Português</span>
+          <p>Captação de clientes locais com tráfego pago segmentado para brasileiros nos EUA.</p>
+        </div>
+        <div class="intl-card rd3">
+          <div class="intl-flag-img"><img src="https://flagcdn.com/w160/br.png" alt="Brasil" loading="lazy"></div>
+          <h3>Brasil</h3>
+          <span class="intl-lang">Português</span>
+          <p>Nosso berço. Negócios brasileiros que querem crescer no digital.</p>
+        </div>
+        <div class="intl-card rd4">
+          <div class="intl-flag-img"><img src="https://flagcdn.com/w160/gb.png" alt="Reino Unido" loading="lazy"></div>
+          <h3>Reino Unido</h3>
+          <span class="intl-lang">English & Português</span>
+          <p>Sites e campanhas adaptadas ao mercado britânico.</p>
+        </div>
+      </div>
+
+      <div class="intl-note rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M2 12h20" />
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+        </svg>
+        <p>Não está vendo seu país? <strong>Sem problemas.</strong> Atendemos brasileiros em qualquer lugar do mundo. <a
+            href="#contato">Fale conosco →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="sh rv">
+        <div class="tag"><span class="tag-dot"></span> O que fazemos</div>
+        <h2>Serviços que geram <span class="gt">resultados reais</span></h2>
+        <p>Tudo o que seu negócio precisa para crescer no digital.</p>
+      </div>
+      <div class="svc-grid">
+        <!-- Card 1: Sites -->
+        <div class="svc-card rv rd1">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20" />
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <h3>Sites & Landing Pages</h3>
+          <p>Sites profissionais e landing pages de alta conversão que transformam visitantes em clientes.</p>
+          <a href="#contato" class="svc-link">Falar com especialista
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <!-- Card 2: Tráfego -->
+        <div class="svc-card rv rd2">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+              <polyline points="16 7 22 7 22 13" />
+            </svg>
+          </div>
+          <h3>Tráfego Pago & Performance</h3>
+          <p>Campanhas em Google Ads, Meta Ads e mais. Foco em leads qualificados e retorno real.</p>
+          <a href="#contato" class="svc-link">Falar com especialista
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <!-- Card 3: Branding -->
+        <div class="svc-card rv rd3">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
+              <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+          </div>
+          <h3>Branding & Identidade Visual</h3>
+          <p>Marca forte e consistente que transmite profissionalismo e conquista a confiança do seu público.</p>
+          <a href="#contato" class="svc-link">Falar com especialista
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about-grid rv">
+        <div class="about-text">
+          <div class="tag"><span class="tag-dot"></span> Quem somos</div>
+          <h2>Parceiros de crescimento de <span class="gt">brasileiros no exterior</span></h2>
+          <p>A Trizos Company nasceu da vontade de ajudar brasileiros que empreendem fora do Brasil. Sabemos que começar
+            um negócio em outro país vem com desafios únicos — e marketing digital não deveria ser um deles.</p>
+          <p>Com mais de 4 anos de experiência e clientes em múltiplos países, entregamos estratégias que funcionam em
+            mercados internacionais, sempre com a dedicação e o calor humano que só um brasileiro sabe oferecer.</p>
+          <a href="#contato" class="about-link">Conheça nossa equipe
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="about-visual">
+          <div class="about-visual-content">
+            <img src="/logo.png" alt="Trizos Company Logo" style="opacity: 0.8; max-width: 200px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid rv">
+        <div class="stat-card">
+          <div class="stat-num">+45</div>
+          <div class="stat-label">Clientes atendidos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Anos de experiência</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Países de atuação</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY US ==================== -->
+  <section class="why" id="diferenciais">
+    <div class="container">
+      <div class="sh rv">
+        <div class="tag"><span class="tag-dot"></span> Diferenciais</div>
+        <h2>Por que escolher a <span class="gt">Trizos?</span></h2>
+        <p>Não somos apenas mais uma agência. Somos parceiros que entendem os desafios de empreender no exterior.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card rv rd1">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+          </div>
+          <h3>Foco em Resultados Reais</h3>
+          <p>Nada de métricas de vaidade. Medimos sucesso por leads gerados, clientes conquistados e receita impactada.
+          </p>
+        </div>
+        <div class="why-card rv rd2">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20" />
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <h3>Atendimento Bilíngue</h3>
+          <p>Comunicação fluente em português e inglês. Campanhas otimizadas para o público do país onde você atua.</p>
+        </div>
+        <div class="why-card rv rd3">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+              <polyline points="16 7 22 7 22 13" />
+            </svg>
+          </div>
+          <h3>Experiência Internacional</h3>
+          <p>Atuamos em mais de 5 países. Conhecemos as nuances de cada mercado e adaptamos as estratégias.</p>
+        </div>
+        <div class="why-card rv rd4">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </div>
+          <h3>Suporte Dedicado</h3>
+          <p>Cada cliente tem acompanhamento próximo e personalizado. Sem robôs, sem filas — só resultados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROCESS ==================== -->
+  <section class="process" id="processo">
+    <div class="container">
+      <div class="sh rv">
+        <div class="tag"><span class="tag-dot"></span> Como funciona</div>
+        <h2>Nosso processo em <span class="gt">4 etapas</span></h2>
+        <p>Do primeiro contato ao resultado. Transparência em cada passo.</p>
+      </div>
+      <div class="process-steps rv">
+        <div class="step rd1">
+          <div class="step-num">1</div>
+          <div>
+            <h3>Descoberta</h3>
+            <p>Entendemos seu negócio, público-alvo e objetivos para criar a estratégia ideal.</p>
+          </div>
+        </div>
+        <div class="step rd2">
+          <div class="step-num">2</div>
+          <div>
+            <h3>Estratégia</h3>
+            <p>Criamos um plano personalizado com canais, metas e cronograma definidos.</p>
+          </div>
+        </div>
+        <div class="step rd3">
+          <div class="step-num">3</div>
+          <div>
+            <h3>Execução</h3>
+            <p>Colocamos tudo no ar: site, campanhas, criativos e otimizações contínuas.</p>
+          </div>
+        </div>
+        <div class="step rd4">
+          <div class="step-num">4</div>
+          <div>
+            <h3>Otimização</h3>
+            <p>Monitoramos métricas reais e ajustamos para maximizar seu retorno constantemente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="process-cta rv">
+        <a href="#contato" class="btn btn-p">Começar agora
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="sh rv">
+        <div class="tag"><span class="tag-dot"></span> Depoimentos</div>
+        <h2>O que nossos clientes <span class="gt">dizem</span></h2>
+        <p>Histórias reais de brasileiros que transformaram seus negócios no exterior.</p>
+      </div>
+      <div class="tst-slider rv">
+        <!-- Depoimento 1 -->
+        <div class="tst-card active">
+          <div class="tst-quote">"</div>
+          <div class="tst-stars">★★★★★</div>
+          <p class="tst-text">A Trizos transformou completamente nosso posicionamento digital na Irlanda. Em poucos
+            meses, triplicamos nossos leads e finalmente temos um fluxo constante de clientes.</p>
+          <div class="tst-author">
+            <div class="tst-avatar">RC</div>
+            <div class="tst-info">
+              <h4>Rafael Costa</h4>
+              <span>Empresário — Dublin, Irlanda</span>
+            </div>
+          </div>
+        </div>
+        <!-- Depoimento 2 -->
+        <div class="tst-card">
+          <div class="tst-quote">"</div>
+          <div class="tst-stars">★★★★★</div>
+          <p class="tst-text">Profissionalismo do início ao fim. O site ficou incrível e as campanhas de tráfego pago
+            trouxeram resultados que nunca imaginei ser possível tão rápido.</p>
+          <div class="tst-author">
+            <div class="tst-avatar">AS</div>
+            <div class="tst-info">
+              <h4>Amanda Silva</h4>
+              <span>Empreendedora — Miami, EUA</span>
+            </div>
+          </div>
+        </div>
+        <!-- Depoimento 3 -->
+        <div class="tst-card">
+          <div class="tst-quote">"</div>
+          <div class="tst-stars">★★★★★</div>
+          <p class="tst-text">Finalmente encontrei uma agência que entende os desafios de empreender fora do Brasil. A
+            equipe é atenciosa, ágil e os resultados falam por si.</p>
+          <div class="tst-author">
+            <div class="tst-avatar">LP</div>
+            <div class="tst-info">
+              <h4>Lucas Pereira</h4>
+              <span>Dono de restaurante — Londres, UK</span>
+            </div>
+          </div>
+        </div>
+        <div class="tst-dots">
+          <button class="tst-dot active" aria-label="Depoimento 1"></button>
+          <button class="tst-dot" aria-label="Depoimento 2"></button>
+          <button class="tst-dot" aria-label="Depoimento 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-grid rv">
+        <div class="faq-left">
+          <div class="tag"><span class="tag-dot"></span> FAQ</div>
+          <h2>Perguntas <span class="gt">frequentes</span></h2>
+          <p>Tire suas dúvidas sobre nossos serviços. Não encontrou o que procura? Entre em contato.</p>
+          <a href="#contato" class="btn btn-s">Fale com a gente</a>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Vocês atendem empresas em qual país?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Atendemos brasileiros empreendendo em qualquer país do mundo! Nosso foco principal hoje está na Irlanda,
+                EUA, Brasil e Reino Unido, mas estamos prontos para ajudar onde quer que você esteja.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Quanto tempo leva para ter resultados?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Depende do serviço. Sites e landing pages ficam prontos em 2-4 semanas. Campanhas de tráfego pago
+                começam a gerar resultados já nos primeiros 7 dias, com otimização contínua para melhora constante.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Vocês fazem sites em inglês e português?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Criamos sites bilíngues (ou até multilíngues) otimizados para SEO local. Cada idioma recebe
+                tratamento dedicado para garantir que a mensagem ressoe com o público certo.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Qual é o investimento mínimo para começar?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Cada projeto é personalizado. Trabalhamos com diferentes faixas de investimento para atender desde quem
+                está começando até empresas já consolidadas. Entre em contato para uma proposta sob medida.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como funciona a comunicação durante o projeto?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Usamos WhatsApp, e-mail e reuniões periódicas por videochamada. Você terá acesso direto à nossa equipe,
+                sem intermediários, independente do fuso horário.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA + FORM ==================== -->
+  <section class="cta-section" id="contato">
+    <div class="container">
+      <div class="cta-grid rv">
+        <div class="cta-text">
+          <h2>Pronto para transformar seu negócio <span class="gt">no exterior?</span></h2>
+          <p>Preencha o formulário ao lado e nossa equipe entrará em contato em até 24 horas com uma proposta
+            personalizada.</p>
+          <ul class="cta-benefits">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <path d="m9 11 3 3L22 4" />
+              </svg>
+              Análise gratuita do seu negócio
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <path d="m9 11 3 3L22 4" />
+              </svg>
+              Proposta personalizada em 24h
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <path d="m9 11 3 3L22 4" />
+              </svg>
+              Sem compromisso ou contratos longos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <path d="m9 11 3 3L22 4" />
+              </svg>
+              Atendimento em português ou inglês
+            </li>
+          </ul>
+          <div class="cta-alt">
+            <p>Prefere entrar em contato diretamente?</p>
+            <div class="cta-links">
+              <a href="mailto:contato@trizoscompany.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                contato@trizoscompany.com
+              </a>
+              <a href="https://www.instagram.com/trizoscompany/" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="5" />
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                </svg>
+                @trizoscompany
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="form-card">
+          <h3>Solicite sua proposta</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="+353 99 999 9999">
+            </div>
+            <div class="form-group">
+              <label for="servico">Serviço de interesse *</label>
+              <select id="servico" name="servico" required>
+                <option value="" disabled selected>Selecione um serviço</option>
+                <option value="site">Site / Landing Page</option>
+                <option value="trafego">Tráfego Pago & Performance</option>
+                <option value="branding">Branding & Identidade Visual</option>
+                <option value="completo">Pacote Completo</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem"
+                placeholder="Conte-nos sobre seu projeto ou negócio..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              Enviar mensagem
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </button>
+            <p class="form-note">🔒 Seus dados estão seguros e não serão compartilhados.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="logo"><span>Trizos Company</span></a>
+          <p>Agência digital para brasileiros no exterior. Sites, landing pages e tráfego pago que geram resultados
+            reais.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/trizoscompany/" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="5" />
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/matheusfelipy/" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@umfuturoinevitavel" target="_blank" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">Sites & Landing Pages</a></li>
+            <li><a href="#servicos">Tráfego Pago</a></li>
+            <li><a href="#servicos">Branding & Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#processo">Como funciona</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:contato@trizoscompany.com">contato@trizoscompany.com</a></li>
+            <li><a href="https://www.instagram.com/trizoscompany/" target="_blank">@trizoscompany</a></li>
+            <li><a href="#contato">Solicite uma proposta</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Trizos Company. Todos os direitos reservados.</p>
+        <a href="#">Política de Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== WHATSAPP FLOAT ==================== -->
+  <!-- TODO: Substituir o # pelo link do WhatsApp real -->
+  <a href="#" target="_blank" class="whatsapp-float" aria-label="WhatsApp" id="whatsappFloat">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+</body>
+
+</html>

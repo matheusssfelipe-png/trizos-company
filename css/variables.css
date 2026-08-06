@@ -1,0 +1,38 @@
+/* ========================================
+   DESIGN TOKENS — Trizos Company
+   Todas as variáveis de cor, fonte e efeitos
+======================================== */
+:root {
+  /* Primary */
+  --p: #7C3AED;
+  --pl: #A78BFA;
+  --pd: #5B21B6;
+
+  /* Accent */
+  --a: #3B82F6;
+  --al: #60A5FA;
+
+  /* Backgrounds */
+  --bg1: #08080D;
+  --bg2: #0E0E18;
+  --bg3: #151525;
+  --bg4: #1C1C35;
+
+  /* Borders */
+  --bc: #252545;
+  --bch: #3B3B6B;
+
+  /* Text */
+  --t1: #F8FAFC;
+  --t2: #94A3B8;
+  --t3: #64748B;
+  --ta: #A78BFA;
+
+  /* Gradients & Effects */
+  --grad: linear-gradient(135deg, #7C3AED, #3B82F6);
+  --glow: 0 0 25px rgba(124, 58, 237, .3);
+
+  /* Fonts */
+  --fh: 'Space Grotesk', sans-serif;
+  --fb: 'Inter', sans-serif;
+}
