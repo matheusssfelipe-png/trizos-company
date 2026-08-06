@@ -39,19 +39,30 @@ document.addEventListener('DOMContentLoaded', () => {
       Enviando...
     `;
 
-    // Formatar mensagem para o WhatsApp
-    const whatsappNumber = '5513992007912';
-    // Codificar a mensagem para URL usando encodeURIComponent
-    const rawText = `*Novo Lead do Site!*\n\n*Nome:* ${data.nome}\n*E-mail:* ${data.email}\n*WhatsApp:* ${data.whatsapp || 'Não informado'}\n*Serviço:* ${data.servico}\n*Mensagem:* ${data.mensagem || 'Sem mensagem'}`;
-    const text = encodeURIComponent(rawText);
-    
-    setTimeout(() => {
-      // Abrir o WhatsApp em uma nova aba
-      window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+    const formspreeEndpoint = 'https://formspree.io/f/xkjwgzvo';
 
-      // Redirecionar a aba atual para a página de obrigado
-      window.location.href = '/obrigado/';
-    }, 800);
+    fetch(formspreeEndpoint, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        // Redirecionar para a página de obrigado após o sucesso
+        window.location.href = '/obrigado/';
+      } else {
+        alert('Ocorreu um erro ao enviar a mensagem. Tente novamente.');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
+    })
+    .catch(error => {
+      alert('Erro de conexão. Verifique sua internet e tente novamente.');
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalText;
+    });
   });
 });
 
