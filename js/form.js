@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
 
       // Redirecionar a aba atual para a página de obrigado
-      window.location.href = '/obrigado.html';
+      window.location.href = '/obrigado/';
     }, 800);
   });
 });
